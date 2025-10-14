@@ -276,5 +276,14 @@ FEATURES
 
 .book__title:hover {
   text-decoration: underline;
-  cursor: no-drop;
+  cursor: not-allowed;
+}
+
+.book__ratings {
+  margin-bottom: 8px;
+  color: #fabf2a;
+}
+
+.book__price--normal {
+ text-decoration:line-through;
 }
