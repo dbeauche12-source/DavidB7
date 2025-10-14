@@ -141,9 +141,7 @@ button:active {
 }
 
 .container {
-padding-top: 56px;
-
-
+pading-top: 56px;
 }
 
 .row {
@@ -237,7 +235,7 @@ FEATURES
 */
 
 #features {
-  padding-top: 8vw;
+  padding-top: 16vw;
   background-color: rgba(115, 66, 214, 0.1);
   min-height: 100vh;
 
@@ -245,6 +243,8 @@ FEATURES
 
 .book__img {
   max-height: 380px;
+  transition: all 300ms ease;
+  cursor: no-drop;
 }
 
 .books {
@@ -253,10 +253,28 @@ FEATURES
 
 .book {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .book__img--wrapper {
   margin-bottom: 8px;
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+}
+
+.book:hover .book__img {
+  transform: scale(1.03);
+}
+
+.book__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.book__title:hover {
+  text-decoration: underline;
+  cursor: no-drop;
 }
