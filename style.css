@@ -156,6 +156,10 @@ pading-top: 56px;
   align-items: center;
 }
 
+.no-cursor {
+  cursor: not-allowed;
+}
+
 
 /* 
 
@@ -307,12 +311,36 @@ FEATURES
   padding-top: 8vw;
 }
 
-
+/* MORE */
 
 #more {
-  padding-top: 8vw;
+  padding-top: 7vw;
   background-color: rgba(115, 66, 214, 0.1);
-  display: flex;
-  
-  
+  padding-bottom: 7vh;
 }
+
+/* FOOTER */
+
+footer {
+  padding-top: 8vw;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo--img {
+width: 160px;
+filter: grayscale(1) invert(1);
+margin: 0 auto;
+}
+
+.footer__link,
+.footer__copyright {
+  color: white;
+  text-align: center;
+}
+
+.footer__list {
+  margin: 24px
+}
+
